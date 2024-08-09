@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <title>Document</title>
+</head>
+
+<body>
+
+      <div class="container">
+            <h1 class="text-center mt-5 mb-3 text-primary">Product Management System Using CRUD Operations</h1>
+            <div class="form-floating mb-3">
+                  <input type="text" class="form-control mb-3" id="productName" placeholder="Product Name">
+                  <label for="productName">Product Name</label>
+            </div>
+            <div class="form-floating">
+                  <input type="text" class="form-control mb-3" id="productPrice" placeholder="product Price">
+                  <label for="productPrice">product Price</label>
+            </div>
+            <div class="form-floating">
+                  <input list="productCatList" type="text" class="form-control mb-3" id="productCat"
+                        placeholder="product Cat">
+                  <label for="productCat">product Category</label>
+                  <datalist id="productCatList">
+                        <option value="Mobiles"></option>
+                        <option value="Laptops"></option>
+                        <option value="TV"></option>
+                        <option value="Watches"></option>
+
+                  </datalist>
+            </div>
+            <div class="form-floating">
+                  <input type="text" class="form-control mb-3" id="productDesc">
+                  <label for="productDesc">product Description</label>
+
+            </div>
+
+
+            <button onclick="getProduct()" type="button" class="btn btn-primary">Add Product</button>
+
+      </div>
+      <div class="container">
+            <table class="table table-striped">
+                  <thead>
+                        <tr>
+                              <th scope="col"> Number</th>
+                              <th scope="col"> Name</th>
+                              <th scope="col"> Price</th>
+                              <th scope="col"> Category</th>
+                              <th scope="col"> Description</th>
+                              <th scope="col">Action</th>
+                        </tr>
+                  </thead>
+                  <tbody id="productTable">
+
+
+                  </tbody>
+
+
+            </table>
+      </div>
+
+      <script src="./js/main.js"></script>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
